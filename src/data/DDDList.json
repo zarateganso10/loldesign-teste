@@ -1,0 +1,32 @@
+[
+    {
+        "origin": "011",
+        "destination": "016",
+        "value/min": 1.90
+    },
+    {
+        "origin": "016",
+        "destination": "011",
+        "value/min": 2.90
+    },
+    {
+        "origin": "011",
+        "destination": "017",
+        "value/min": 1.70
+    },
+    {
+        "origin": "017",
+        "destination": "011",
+        "value/min": 2.70
+    },
+    {
+        "origin": "011",
+        "destination": "018",
+        "value/min": 0.90
+    },
+    {
+        "origin": "018",
+        "destination": "011",
+        "value/min": 1.90
+    }
+]

@@ -1,0 +1,82 @@
+#home .img-logo{
+    height: 500px;
+    width: 50%;
+    position: relative;
+}
+
+#home .container-fluid {
+    min-height: 700px;
+}
+
+#home .container-fluid .container-text {
+    margin: 200px 100px;
+}
+
+#home .container-fluid .container-text .row .col h1 {
+    font-size: 60px;
+}
+
+#home .container-fluid .container-text .row .col span {
+    color: #27AE60;
+}
+
+
+#home .container-fluid .container-text .row .col p {
+    font-size: 20px;
+}
+
+#home .container-fluid .container-text .row .col .container-icon {
+    background-color: aquamarine;
+
+}
+
+#home .container .container-cards {
+    min-height: 700px;
+}
+
+#home .container .container-cards .card {
+    width: 18rem;
+}
+
+#home .container .container-cards .card .card-body h5 {
+    font-size: 30px;
+}
+
+#home .container .container-cards .card .card-body h6 {
+    font-size: 20px;
+}
+
+#home .container .container-cards .card .card-body p {
+    font-size: 18px;
+}
+
+#home .container .container-cards .card .card-body a {
+    font-size: 20px;
+}
+
+#home .container .container-cards h2 {
+    text-align: center;
+    margin-bottom: 200px;
+    font-size: 45px;
+
+}
+
+#home .container .container-table {
+    min-height: 700px;
+}
+
+#home .container .container-table h2 {
+    text-align: center;
+    margin-bottom: 200px;
+    font-size: 45px;
+}
+
+#home .container .container-form {
+    min-height: 700px;
+}
+
+#home .container .container-form h2 {
+    font-size: 45px;
+    margin-bottom: 200px;
+    text-align: center;
+}

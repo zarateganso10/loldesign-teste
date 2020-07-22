@@ -1,0 +1,12 @@
+nav {
+    height: 70px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #e1e5f2;
+}
