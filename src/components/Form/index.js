@@ -39,13 +39,14 @@ export default function Form(){
         //Whitout Plan
         const priceWithoutPlan = pricePerMinute * parseInt(time);
         SetWithoutPlan(priceWithoutPlan);
+        window.scrollTo(0,2800);
     }
 
     return(
         <div id="form">
             <form onSubmit={handleForm}>
                 <div className="row">
-                    <div className="col">
+                    <div className="col-lg-3 col-sm-6">
                         <label for="origin">Origem</label>
                         <select id="origin" class="form-control" value={origin} onChange={event => setOrigin(event.target.value)}>
                             <option value="011">011</option>
@@ -54,7 +55,7 @@ export default function Form(){
                             <option value="018">018</option>
                         </select>
                     </div>
-                    <div className="col">
+                    <div className="col-lg-3 col-sm-6">
                         <label for="destination">Destino</label>
                         <select id="destination" class="form-control" value={destination} onChange={event => setDestination(event.target.value)}>
                             <option value="011">011</option>
@@ -63,11 +64,11 @@ export default function Form(){
                             <option value="018">018</option>
                         </select>
                     </div>
-                    <div className="col">
+                    <div className="col-lg-3 col-sm-6">
                         <label for="destination">Tempo</label>
-                        <input class="form-control" placeholder="10 min" onChange={event => setTime(event.target.value)}></input>
+                        <input class="form-control" placeholder="10 min" onChange={event => setTime(event.target.value)} required></input>
                     </div>
-                    <div className="col">
+                    <div className="col-lg-3 col-sm-6">
                         <label for="destination">Plano FaleMais</label>
                         <select class="form-control" onChange={event => setPlano(event.target.value)}>
                             <option value={30}>30</option>
@@ -79,7 +80,7 @@ export default function Form(){
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Calcular Custo</button>
             </form>
             <div className={withPlan === -1 && withoutPlan === -1 ? "hidden" : "row container-cards"}>
-                <div className="col col-lg-3">
+                <div className="col-lg-6 com-sm-12">
                     <div className={withPlan < withoutPlan ? "card text-white bg-success mb-3" : "card text-white bg-danger mb-3" }>
                         <div className="card-header">Com Plano FaleMais</div>
                         <div className="card-body">
@@ -87,7 +88,7 @@ export default function Form(){
                         </div>
                     </div>
                 </div>
-                <div className="col col-lg-3">
+                <div className="col-lg-6 col-sm-12">
                     <div className={withoutPlan < withPlan ? "card text-white bg-success mb-3" : "card text-white bg-danger mb-3" }>
                         <div className="card-header">Sem Plano FaleMais</div>
                         <div className="card-body">

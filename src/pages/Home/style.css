@@ -1,8 +1,4 @@
-#home .img-logo{
-    height: 500px;
-    width: 50%;
-    position: relative;
-}
+/* Container Apresentacao */
 
 #home .container-fluid {
     min-height: 700px;
@@ -12,23 +8,46 @@
     margin: 200px 100px;
 }
 
-#home .container-fluid .container-text .row .col h1 {
+#home .container-fluid .container-text .row .col-lg-6 h1 {
     font-size: 60px;
 }
 
-#home .container-fluid .container-text .row .col span {
+#home .container-fluid .container-text .row .col-lg-6 span {
     color: #27AE60;
 }
 
 
-#home .container-fluid .container-text .row .col p {
+#home .container-fluid .container-text .row .col-lg-6 p {
     font-size: 20px;
 }
 
-#home .container-fluid .container-text .row .col .container-icon {
-    background-color: aquamarine;
-
+#home .container-fluid .container-text .row .col-lg-6 .container-icon {
+    text-align: center;
+    font-size: 200px;
 }
+
+@media only screen and (max-width: 600px) {
+    
+    #home .container-fluid {
+        min-height: 500px;
+        margin-bottom: 100px;
+    }
+    
+    #home .container-fluid .container-text {
+        margin: 10px 20px;
+    }
+    
+    #home .container-fluid .container-text .row .col-sm-12 h1 {
+        font-size: 36px;
+    }
+
+    #home .container-fluid .container-text .row .col-lg-6 .container-icon {
+        text-align: center;
+        font-size: 100px;
+    }
+}
+
+/* Container dos Planos*/
 
 #home .container .container-cards {
     min-height: 700px;
@@ -47,7 +66,8 @@
 }
 
 #home .container .container-cards .card .card-body p {
-    font-size: 18px;
+    font-size: 16px;
+
 }
 
 #home .container .container-cards .card .card-body a {
@@ -61,6 +81,43 @@
 
 }
 
+@media only screen and (max-width: 600px) {
+    
+    #home .container .container-cards {
+        min-height: 500px;
+        margin-bottom: 200px;
+    }
+    
+    #home .container .container-cards .card {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    
+    #home .container .container-cards .card .card-body h5 {
+        font-size: 28px;
+    }
+    
+    #home .container .container-cards .card .card-body h6 {
+        font-size: 20px;
+    }
+    
+    #home .container .container-cards .card .card-body p {
+        font-size: 18px;
+    }
+    
+    #home .container .container-cards .card .card-body a {
+        font-size: 20px;
+    }
+    
+    #home .container .container-cards h2 {
+        text-align: center;
+        margin-bottom: 100px;
+        font-size: 32px;
+    }
+}
+
+/* Container da Tabela */
+
 #home .container .container-table {
     min-height: 700px;
 }
@@ -71,6 +128,22 @@
     font-size: 45px;
 }
 
+@media only screen and (max-width: 600px) {
+    
+    #home .container .container-table {
+        min-height: 500px;
+        margin-bottom: 200px;
+    }
+    
+    #home .container .container-table h2 {
+        text-align: center;
+        margin-bottom: 100px;
+        font-size: 32px;
+    }  
+}
+
+/* Container do Formulario */
+
 #home .container .container-form {
     min-height: 700px;
 }
@@ -79,4 +152,17 @@
     font-size: 45px;
     margin-bottom: 200px;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #home .container .container-form {
+        min-height: 500px;
+    }
+    
+    #home .container .container-form h2 {
+        font-size: 32px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
 }

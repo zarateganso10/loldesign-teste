@@ -3,7 +3,11 @@
 }
 
 #form .container-cards {
-    display: flexbox;
+    display: flex;
+}
+
+#form .container-cards .col-lg-6 .card {
+    margin: 0px auto;
 }
 
 #form button {
